@@ -5,11 +5,8 @@
 <div id="content">
     <div class="container fundify-modal payment">
         <div id="main-content">
-
             <article id="post-575" class="post-575 page type-page status-publish hentry">
-
                 <div class="entry-content">
-
                     <div id="edd_checkout_wrap"><!--dynamic-cached-content-->
                         <form id="edd_checkout_cart_form" method="post">
                             <div id="edd_checkout_cart_wrap">
@@ -24,10 +21,14 @@
                                     <tbody>
                                     <tr class="edd_cart_item" id="edd_cart_item_0_44" data-download-id="44">
                                         <td class="edd_cart_item_name">
-                                            <div class="edd_cart_item_image"></div><span class="edd_checkout_cart_item_title">Game Design - A 2-day intensive adventure for 2! A chance of a lifetime for you and a friend to come and watch the doohickeys being created right in front of your eyes. This is a amazing one of a kind reward to our crowd funding partners.</span>					</td>
-                                        <td class="edd_cart_item_price">$1,000.00</td>
+                                            <div class="edd_cart_item_image"></div>
+                                            <span class="edd_checkout_cart_item_title">
+                                                River City Red - The River City Red label says it all, “Wee Bit Malty – Crisp and Clean.” This beer is made from five different malted, two-row barley grains to give it just the right caramel red color, then we use two different hop varieties for flavor and aroma. The beer is well balanced between the sweetness of the malted barley and the bite of the hops. 2014 Washington Beer Awards Gold Medal Winner
+                                            </span>
+                                        </td>
+                                        <td class="edd_cart_item_price">$10.00</td>
                                         <td class="edd_cart_actions">
-                                            <a href="http://builtevents.com/index.php?page_id=575&amp;cart_item=0&amp;edd_action=remove">Remove</a>
+                                            <a href="/payment">Remove</a>
                                         </td>
                                     </tr>
                                     <!-- Show any cart fees, both positive and negative fees -->
@@ -35,33 +36,17 @@
                                     <tfoot>
 
                                     <tr class="edd_cart_footer_row">
-                                        <th colspan="5">
-                                            <a class="edd-cart-saving-button edd-submit button blue" id="edd-save-cart-button" href="/checkout-2?edd_action=save_cart">Save Cart</a>
+                                        <th colspan="5" class="edd_cart_total">
+                                            Total: <span class="edd_cart_amount" data-subtotal="1000" data-total="1000">$10.00</span>
                                         </th>
-                                    </tr>
-
-
-                                    <tr class="edd_cart_footer_row edd_cart_discount_row" style="display:none;">
-                                        <th colspan="5" class="edd_cart_discount">
-                                        </th>
-                                    </tr>
-
-                                    <tr class="edd_cart_footer_row">
-                                        <th colspan="5" class="edd_cart_total">Total: <span class="edd_cart_amount" data-subtotal="1000" data-total="1000">$1,000.00</span></th>
                                     </tr>
                                     </tfoot>
                                 </table>
                             </div>
                         </form><!--/dynamic-cached-content-->
                         <div id="edd_checkout_form_wrap" class="edd_clearfix">
-                            <form id="edd_purchase_form" action="http://builtevents.com/checkout-2?payment-mode=manual" method="POST">
-                                <div class="edd-payment-icons">
-                                    <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/mastercard.gif">
-                                    <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/visa.gif">
-                                    <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/americanexpress.gif">
-                                    <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/discover.gif">
-                                    <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/paypal.gif">
-                                </div>
+                            <form id="edd_purchase_form" action="/party" method="POST">
+
                                 <fieldset id="edd_checkout_user_info">
                                     <span><legend>Personal Info</legend></span>
                                     <p id="edd-email-wrap">
@@ -70,7 +55,7 @@
                                             <span class="edd-required-indicator">*</span>
                                         </label>
                                         <span class="edd-description">We will send the purchase receipt to this address.</span>
-                                        <input class="edd-input required" type="email" name="edd_email" placeholder="Email address" id="edd-email" value="jtownsend54@gmail.com">
+                                        <input class="edd-input required" type="email" name="edd_email" placeholder="Email address" id="edd-email" value="">
                                     </p>
                                     <p id="edd-first-name-wrap">
                                         <label class="edd-label" for="edd-first">
@@ -87,6 +72,62 @@
                                         <input class="edd-input" type="text" name="edd_last" id="edd-last" placeholder="Last name" value="">
                                     </p>
                                 </fieldset>
+
+                                <fieldset id="edd_checkout_user_info">
+                                    <span><legend>Payment Info</legend></span>
+                                    <div class="edd-payment-icons">
+                                        <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/mastercard.gif">
+                                        <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/visa.gif">
+                                        <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/americanexpress.gif">
+                                        <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/discover.gif">
+                                        <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/paypal.gif">
+                                    </div>
+                                    <p id="edd-email-wrap">
+                                        <label class="edd-label" for="edd-email">
+                                            Card Number
+                                            <span class="edd-required-indicator">*</span>
+                                        </label>
+                                        <input class="edd-input required" type="email" name="edd_email" placeholder="Card Number" id="edd-email" value="">
+                                    </p>
+                                    <p id="edd-credit-wrap">
+                                        <label class="edd-label" for="edd-first">
+                                            Expiration Date
+                                            <span class="edd-required-indicator">*</span>
+                                        </label>
+                                        <select name="" id="month">
+                                            <option value="1">January - 1</option>
+                                            <option value="2">February - 2</option>
+                                            <option value="3">March - 3</option>
+                                            <option value="4">April - 4</option>
+                                            <option value="5">May - 5</option>
+                                            <option value="6">June - 6</option>
+                                            <option value="7">July - 7</option>
+                                            <option value="8">August - 8</option>
+                                            <option value="9">September - 9</option>
+                                            <option value="10">October - 10</option>
+                                            <option value="11">November - 11</option>
+                                            <option value="12">December - 12</option>
+                                        </select>
+                                        <select name="" id="year">
+                                            <option value="2014">2014</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                        </select>
+                                    </p>
+                                    <p id="edd-cvv-wrap">
+                                        <label class="edd-label" for="edd-last">
+                                            CVV
+                                        </label>
+                                        <input class="edd-input" type="text" name="edd_last" id="edd-last" placeholder="CVV" value="">
+                                    </p>
+                                </fieldset>
                                 <p id="edd-anon-wrap">
                                     <label class="edd-label" for="edd-anon">
                                         <input class="edd-input" type="checkbox" name="edd_anon" id="edd-anon" style="vertical-align: middle;">
@@ -96,15 +137,9 @@
                                 <fieldset id="edd_purchase_submit">
                                     <p id="edd_final_total_wrap">
                                         <strong>Purchase Total:</strong>
-                                        <span class="edd_cart_amount" data-subtotal="1000" data-total="1000">$1,000.00</span>
+                                        <span class="edd_cart_amount" data-subtotal="1000" data-total="1000">$10.00</span>
                                     </p>
-
-                                    <input type="hidden" name="edd-user-id" value="94">
-                                    <input type="hidden" name="edd_action" value="purchase">
-                                    <input type="hidden" name="edd-gateway" value="manual">
-
-                                    <input type="submit" class="edd-submit blue button" id="edd-purchase-button" name="edd-purchase" value="Purchase">
-
+                                    <a href="/party" class="btn btn-yellow">Purchase</a>
 
                                 </fieldset>
                             </form>

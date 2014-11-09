@@ -1654,7 +1654,6 @@ img.aligncenter {
 
 .entry-content table,
 .comment-content table {
-    border-bottom: 1px solid #ededed;
     color: #757575;
     font-size: 12px;
     font-size: 0.857142857rem;
@@ -2414,13 +2413,10 @@ a.page-numbers:hover {
     font-size: 22px;
     letter-spacing: 2px;
     line-height: 26px;
-    color: #515151;
+    color: white;
     text-transform: uppercase;
-
     margin: 0 0 0.5em;
     padding: 20px 0;
-    border-top: 4px double #dbd9d4;
-    border-bottom: 4px double #dbd9d4;
 }
 
 #edd_checkout_form_wrap p#edd-anon-wrap {
@@ -2429,6 +2425,61 @@ a.page-numbers:hover {
 
 #edd_checkout_form_wrap p#edd-anon-wrap input {
     width: auto;
+}
+
+#edd_checkout_form_wrap span.edd-description {
+    color:white;
+}
+
+#edd_checkout_cart .edd_cart_header_row th {
+    background:#5E2A2C;
+    color:white;
+}
+
+#edd_checkout_cart td {
+    background:#f3dab1;
+    color:#5E2A2C;
+}
+
+#edd_checkout_cart td,
+#edd_checkout_cart th {
+    border:none;
+}
+
+#edd_checkout_cart .edd_cart_total {
+    color:#5E2A2C;
+    font-size: 18px;
+}
+
+#edd_checkout_form_wrap fieldset {
+    border:none;
+    padding:0 0 15px 0;
+    margin-top:0;
+}
+
+#edd_checkout_form_wrap input.edd-input {
+    background:#f3dab1;
+}
+
+#edd_checkout_form_wrap #edd_final_total_wrap {
+    color:white;
+    background:#c3502f;
+    border:none;
+}
+
+#edd_purchase_submit .btn {
+    width:200px;
+}
+
+#edd-credit-wrap select {
+    width:100px;
+    float:left;
+    margin-right:10px;
+}
+
+#edd-credit-wrap,
+#edd-cvv-wrap {
+    float:left;
 }
 
 /** Single Contribute */
@@ -2585,6 +2636,8 @@ a.page-numbers:hover {
 .edd_purchase_submit_wrapper .btn {
     width:150px;
 }
+
+
 
 .fundify-modal .edd_download_purchase_form {
     padding: 0;
