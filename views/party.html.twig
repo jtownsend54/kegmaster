@@ -1,0 +1,79 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<div id="content">
+    <div class="container">
+        <div class="search-box">
+            <form method="get" id="searchform" action="http://builtevents.com/" role="search">
+                <input type="text" name="s" placeholder="Search">
+                <button type="submit" class="submit" name="submit" id="searchsubmit"><i class="icon-search"></i></button>
+                <input type="hidden" name="type" value="download">
+            </form>
+        </div>
+        <div class="sort-tabs campaign">
+            <ul>
+                <li><a href="#" class="tabber">Comments</a></li>
+                <li><a href="#" class="tabber">Backers</a></li>
+            </ul>
+        </div>
+        <div id="main-content">
+            <div class="post-meta campaign-meta">
+                <div class="date">
+                    <i class="icon-calendar"></i>
+                    Launched: May 28, 2014
+                </div>
+                <div class="funding-ends">
+                    <i class="icon-clock"></i>
+                    Funding Ends: June 25, 2014
+                </div>
+                <div class="location">
+                    <i class="icon-compass"></i>
+                    Portland
+                </div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        <article class="project-details">
+            <div class="image">
+                <div class="video-container">
+                    <iframe width="745" height="419" src="https://www.youtube.com/embed/MGVT7Z-T_4Q?feature=oembed" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="right-side party">
+                <ul class="campaign-stats">
+                    <li class="progress">
+                        <h3>$45.00</h3>
+                        <p>Pledged of $200.00 Goal</p>
+                        <div class="bar"><span style="width: 22.5%"></span></div>
+                    </li>
+                    <li class="backer-count">
+                        <h3>7</h3>
+                        <p>Backers</p>
+                    </li>
+                    <li class="days-remaining">
+                        <h3>3</h3>
+                        <p>Hours to Go</p>
+                    </li>
+                </ul>
+                <div class="contribute-now">
+                    <a href="/choose" class="btn-green">Fund</a>
+                </div>
+                <p class="fund">
+                    All pledges will be collected automatically until November 9, 2014.
+                </p>
+            </div>
+        </article>
+        <div id="main-content">
+            <div class="entry-share">
+                Share this campaign
+                <a href="http://twitter.com/home?status=Check+out+Help+Uncle+Noah+get+a+new+puppy.+on+Built+Events%21+http%3A%2F%2Fbuiltevents.com%2Fcampaigns%2Fhelp-uncle-noah-get-a-new-puppy" target="_blank" class="share-twitter"><i class="icon-twitter"></i></a>
+                <a href="https://plus.google.com/share?url=http://builtevents.com/campaigns/help-uncle-noah-get-a-new-puppy" target="_blank" class="share-google"><i class="icon-gplus"></i></a>
+                <a href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=http%3A%2F%2Fbuiltevents.com%2Fcampaigns%2Fhelp-uncle-noah-get-a-new-puppy&amp;p[images][0]=http%3A%2F%2Fbuiltevents.com%2Fwp-content%2Fuploads%2F2014%2F05%2Fimages.jpeg&amp;p[title]=Help+Uncle+Noah+get+a+new+puppy.&amp;p[summary]=Check+out+Help+Uncle+Noah+get+a+new+puppy.+on+Built+Events%21+http%3A%2F%2Fbuiltevents.com%2Fcampaigns%2Fhelp-uncle-noah-get-a-new-puppy" class="share-facebook"><i class="icon-facebook"></i></a>
+                <a href="http://pinterest.com/pin/create/button/?url=http://builtevents.com/campaigns/help-uncle-noah-get-a-new-puppy" target="_blank" class="share-pinterest"><i class="icon-pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

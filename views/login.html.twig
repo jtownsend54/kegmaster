@@ -1,0 +1,37 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<div id="content">
+    <div class="container fundify-modal">
+        <h2 class="modal-title">Login</h2>
+
+        <div class="atcf-login">
+            <form name="loginform" id="loginform" action="/profile" method="post">
+                <p class="login-username">
+                    <label for="user_login">Username</label>
+                    <input type="text" name="log" id="user_login" class="input" value="" size="20">
+                </p>
+                <br/>
+                <p class="login-password">
+                    <label for="user_pass">Password</label>
+                    <input type="password" name="pwd" id="user_pass" class="input" value="" size="20">
+                </p>
+                <br/>
+                <p class="login-remember">
+                    <label><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label>
+                </p>
+                <br/>
+                <p class="login-submit">
+                    <input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In">
+                </p>
+                <br/>
+                <p>
+                    <a href="/sign-up">Register</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

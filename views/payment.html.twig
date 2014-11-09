@@ -1,0 +1,120 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<div id="content">
+    <div class="container fundify-modal payment">
+        <div id="main-content">
+
+            <article id="post-575" class="post-575 page type-page status-publish hentry">
+
+                <div class="entry-content">
+
+                    <div id="edd_checkout_wrap"><!--dynamic-cached-content-->
+                        <form id="edd_checkout_cart_form" method="post">
+                            <div id="edd_checkout_cart_wrap">
+                                <table id="edd_checkout_cart" class="ajaxed">
+                                    <thead>
+                                    <tr class="edd_cart_header_row">
+                                        <th class="edd_cart_item_name">Item Name</th>
+                                        <th class="edd_cart_item_price">Item Price</th>
+                                        <th class="edd_cart_actions">Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="edd_cart_item" id="edd_cart_item_0_44" data-download-id="44">
+                                        <td class="edd_cart_item_name">
+                                            <div class="edd_cart_item_image"></div><span class="edd_checkout_cart_item_title">Game Design - A 2-day intensive adventure for 2! A chance of a lifetime for you and a friend to come and watch the doohickeys being created right in front of your eyes. This is a amazing one of a kind reward to our crowd funding partners.</span>					</td>
+                                        <td class="edd_cart_item_price">$1,000.00</td>
+                                        <td class="edd_cart_actions">
+                                            <a href="http://builtevents.com/index.php?page_id=575&amp;cart_item=0&amp;edd_action=remove">Remove</a>
+                                        </td>
+                                    </tr>
+                                    <!-- Show any cart fees, both positive and negative fees -->
+                                    </tbody>
+                                    <tfoot>
+
+                                    <tr class="edd_cart_footer_row">
+                                        <th colspan="5">
+                                            <a class="edd-cart-saving-button edd-submit button blue" id="edd-save-cart-button" href="/checkout-2?edd_action=save_cart">Save Cart</a>
+                                        </th>
+                                    </tr>
+
+
+                                    <tr class="edd_cart_footer_row edd_cart_discount_row" style="display:none;">
+                                        <th colspan="5" class="edd_cart_discount">
+                                        </th>
+                                    </tr>
+
+                                    <tr class="edd_cart_footer_row">
+                                        <th colspan="5" class="edd_cart_total">Total: <span class="edd_cart_amount" data-subtotal="1000" data-total="1000">$1,000.00</span></th>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </form><!--/dynamic-cached-content-->
+                        <div id="edd_checkout_form_wrap" class="edd_clearfix">
+                            <form id="edd_purchase_form" action="http://builtevents.com/checkout-2?payment-mode=manual" method="POST">
+                                <div class="edd-payment-icons">
+                                    <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/mastercard.gif">
+                                    <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/visa.gif">
+                                    <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/americanexpress.gif">
+                                    <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/discover.gif">
+                                    <img class="payment-icon" src="http://builtevents.com/wp-content/plugins/easy-digital-downloads/templates/images/icons/paypal.gif">
+                                </div>
+                                <fieldset id="edd_checkout_user_info">
+                                    <span><legend>Personal Info</legend></span>
+                                    <p id="edd-email-wrap">
+                                        <label class="edd-label" for="edd-email">
+                                            Email Address
+                                            <span class="edd-required-indicator">*</span>
+                                        </label>
+                                        <span class="edd-description">We will send the purchase receipt to this address.</span>
+                                        <input class="edd-input required" type="email" name="edd_email" placeholder="Email address" id="edd-email" value="jtownsend54@gmail.com">
+                                    </p>
+                                    <p id="edd-first-name-wrap">
+                                        <label class="edd-label" for="edd-first">
+                                            First Name
+                                            <span class="edd-required-indicator">*</span>
+                                        </label>
+                                        <span class="edd-description">We will use this to personalize your account experience.</span>
+                                        <input class="edd-input required" type="text" name="edd_first" placeholder="First name" id="edd-first" value="">
+                                    </p>
+                                    <p id="edd-last-name-wrap">
+                                        <label class="edd-label" for="edd-last">
+                                            Last Name							</label>
+                                        <span class="edd-description">We will use this as well to personalize your account experience.</span>
+                                        <input class="edd-input" type="text" name="edd_last" id="edd-last" placeholder="Last name" value="">
+                                    </p>
+                                </fieldset>
+                                <p id="edd-anon-wrap">
+                                    <label class="edd-label" for="edd-anon">
+                                        <input class="edd-input" type="checkbox" name="edd_anon" id="edd-anon" style="vertical-align: middle;">
+                                        Hide name on backers list?
+                                    </label>
+                                </p>
+                                <fieldset id="edd_purchase_submit">
+                                    <p id="edd_final_total_wrap">
+                                        <strong>Purchase Total:</strong>
+                                        <span class="edd_cart_amount" data-subtotal="1000" data-total="1000">$1,000.00</span>
+                                    </p>
+
+                                    <input type="hidden" name="edd-user-id" value="94">
+                                    <input type="hidden" name="edd_action" value="purchase">
+                                    <input type="hidden" name="edd-gateway" value="manual">
+
+                                    <input type="submit" class="edd-submit blue button" id="edd-purchase-button" name="edd-purchase" value="Purchase">
+
+
+                                </fieldset>
+                            </form>
+                        </div><!--end #edd_checkout_form_wrap-->
+                    </div><!--end #edd_checkout_wrap-->
+
+                </div><!-- .entry-content -->
+            </article>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

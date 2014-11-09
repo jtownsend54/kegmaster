@@ -1,0 +1,101 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<div id="content">
+    <div class="container fundify-modal choose">
+        <form id="edd_purchase_44" class="edd_download_purchase_form" method="post" action="/payment">
+            <div class="edd_price_options active">
+                <ul>
+                    <li class="atcf-price-option " data-price="5.00-0">
+                        <div class="clear">
+                            <h3>
+                                <label for="edd_price_option_44_0">
+                                    <input type="radio" name="edd_options[price_id][]" id="edd_price_option_44_0" class="edd_price_option_44 edd_price_options_input" value="0" checked="checked">
+                                    <span class="pledge-verb">Pledge</span> $5.00
+                                </label>
+                            </h3>
+                            <div class="backers">
+                                <div class="backer-count">
+                                    <i class="icon-user"></i> 0 Backers
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Get one of these amazing doohickeys at this low price and fund this campaign so we can
+                            continue to create great doohickeys.
+                        </p>
+                    </li>
+                    <li class="atcf-price-option " data-price="50.00-1">
+                        <div class="clear">
+                            <h3>
+                                <label for="edd_price_option_44_1">
+                                    <input type="radio" name="edd_options[price_id][]" id="edd_price_option_44_1" class="edd_price_option_44 edd_price_options_input" value="1">
+                                    <span class="pledge-verb">Pledge</span> $10.00
+                                </label>
+                            </h3>
+                            <div class="backers">
+                                <div class="backer-count">
+                                    <i class="icon-user"></i> 0 Backers
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Get the same amazing same doohickeys as listed above, with one awesome addition: we'll throw
+                            in two more doohickeys just cos we like you and and we'll even sign it personally as a sign
+                            of gratitude.
+                        </p>
+                    </li>
+                    <li class="atcf-price-option " data-price="500.00-2">
+                        <div class="clear">
+                            <h3>
+                                <label for="edd_price_option_44_2">
+                                    <input type="radio" name="edd_options[price_id][]" id="edd_price_option_44_2" class="edd_price_option_44 edd_price_options_input" value="2">
+                                    <span class="pledge-verb">Pledge</span> $15.00
+                                </label>
+                            </h3>
+                            <div class="backers">
+                                <div class="backer-count">
+                                    <i class="icon-user"></i> 0 Backers
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            A custom batch of doohickeys made to order, with your choice of color and a custom label
+                            printed on the doohickey. Great for all your gift-giving needs!
+                        </p>
+                    </li>
+                    <li class="atcf-price-option " data-price="1000.00-3">
+                        <div class="clear">
+                            <h3>
+                                <label for="edd_price_option_44_3">
+                                    <input type="radio" name="edd_options[price_id][]" id="edd_price_option_44_3" class="edd_price_option_44 edd_price_options_input" value="3">
+                                    <span class="pledge-verb">Pledge</span> $25.00
+                                </label>
+                            </h3>
+                            <div class="backers">
+                                <div class="backer-count">
+                                    <i class="icon-user"></i> 0 Backers
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            A 2-day intensive adventure for 2! A chance of a lifetime for you and a friend to come and
+                            watch the doohickeys being created right in front of your eyes. This is a amazing one of a
+                            kind reward to our crowd funding partners.
+                        </p>
+                    </li>
+                </ul>
+            </div><!--end .edd_price_options-->
+
+            <div class="edd_purchase_submit_wrapper">
+                <a class="btn btn-yellow" href="/purchase">Add to Cart</a>
+            </div><!--end .edd_purchase_submit_wrapper-->
+
+            <input type="hidden" name="download_id" value="44">
+            <input type="hidden" name="edd_action" class="edd_action_input" value="add_to_cart">
+        </form>
+    </div>
+</div>
+
+{% endblock %}

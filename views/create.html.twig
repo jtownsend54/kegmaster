@@ -1,0 +1,114 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<div id="content">
+    <div class="container fundify-modal">
+        <div id="main-content">
+            <article id="post-119" class="post-119 page type-page status-publish hentry">
+                <div class="entry-content">
+                    <form action="/party" method="post" class="atcf-submit-campaign" enctype="multipart/form-data">
+                        <h3 class="atcf-submit-section campaign_heading">Campaign Information</h3>
+                        <p class="atcf-submit-campaign-title">
+                            <label for="title">Title</label>
+                            <input type="text" name="title" id="title" value="" placeholder="">
+                        </p>
+                        <p class="atcf-submit-campaign-goal">
+                            <label for="goal">Goal ($)</label>
+                            <input type="text" name="goal" id="goal" value="" placeholder="800.00">
+                        </p>
+                        <p class="atcf-submit-campaign-length">
+                            <label for="length">Length<a href="#" class="atcf-toggle-neverending">No End Date</a></label>
+                            <input type="number" min="14" max="42" step="1" name="length" id="length" value="28" placeholder="">
+                        </p>
+                        <input type="hidden" name="type" value="donation">	<div class="atcf-submit-campaign-category">
+                            <label for="category">Categories</label>
+
+                            <ul class="atcf-multi-select">
+
+                                <li class="popular-category"><label class="selectit"><input value="7" type="checkbox"> River City Red</label></li>
+
+                                <li class="popular-category"><label class="selectit"><input value="12" type="checkbox"> Girlfriend Golden</label></li>
+
+                                <li class="popular-category"><label class="selectit"><input value="8" type="checkbox"> Afternoon IPA</label></li>
+
+                                <li class="popular-category"><label class="selectit"><input value="9" type="checkbox"> Riverkeeper IPA</label></li>
+
+                                <li class="popular-category"><label class="selectit"><input value="11" type="checkbox"> Huckleberry Ale</label></li>
+
+                                <li class="popular-category"><label class="selectit"><input value="13" type="checkbox"> VB Stout</label></li>
+
+                                <li class="popular-category"><label class="selectit"><input value="6" type="checkbox"> Clocktower Imperial IPA</label></li>
+                            </ul>
+                        </div>
+                        <p class="atcf-submit-campaign-excerpt">
+                            <label for="excerpt">Excerpt</label>
+                            <textarea name="excerpt" id="excerpt"></textarea>
+                        </p>
+                        <h3 class="atcf-submit-section backer_rewards_heading">Backer Rewards</h3>
+                        <p class="atcf-submit-campaign-physical">
+                            <label for="physical">
+                                <input type="checkbox" id="physical" name="physical" value="1"> Collect shipping information on checkout.		</label>
+                        </p>
+                        <p class="atcf-submit-campaign-norewards">
+                            <label for="norewards">
+                                <input type="checkbox" id="norewards" name="norewards" value="1"> No rewards, donations only.		</label>
+                        </p>
+
+                        <div class="atcf-submit-campaign-rewards">
+                            <div class="atcf-submit-campaign-reward">
+
+                                <p class="atcf-submit-campaign-reward-amount">
+                                    <label for="rewards[0][amount]">Amount ($)</label>
+                                    <input class="name" type="text" name="rewards[0][amount]" id="rewards[0][amount]" value="">
+                                </p>
+
+                                <p class="atcf-submit-campaign-reward-name">
+                                    <label for="rewards[0][name]">Reward</label>
+                                    <input class="name" type="text" name="rewards[0][name]" id="rewards[0][name]" rows="3" value="">
+                                </p>
+
+                                <p class="atcf-submit-campaign-reward-limit">
+                                    <label for="rewards[0][limit]">Limit</label>
+                                    <input class="description" type="text" name="rewards[0][limit]" id="rewards[0][limit]" value="">
+                                    <input type="hidden" name="rewards[0][bought]" id="rewards[0][bought]" value="0">
+                                </p>
+
+
+                                <p class="atcf-submit-campaign-reward-remove">
+                                    <label>&nbsp;</label><br>
+                                    <a href="#">×</a>
+                                </p>
+                            </div>
+
+                            <p class="atcf-submit-campaign-add-reward">
+                                <a href="#" class="atcf-submit-campaign-add-reward-button">+ <em>Add Reward</em></a>
+                            </p>
+                        </div>
+                        <h3 class="atcf-submit-section info_heading">Your Information</h3>
+
+                        <p class="atcf-submit-campaign-organization">
+                            <label for="organization">Name/Organization</label>
+                            <input type="text" name="organization" id="organization" value="" placeholder="">
+                        </p>
+                        <p class="atcf-submit-campaign-location">
+                            <label for="location">Location</label>
+                            <input type="text" name="location" id="location" value="" placeholder="">
+                        </p>
+
+                        <p class="atcf-submit-campaign-submit">
+                            <button type="submit" name="submit" value="submit" class="button">
+                                Create Party
+                            </button>
+
+                            <input type="hidden" name="action" value="atcf-campaign-submit">
+                            <input type="hidden" id="_wpnonce" name="_wpnonce" value="5d67fb1710"><input type="hidden" name="_wp_http_referer" value="/start-a-campaign">
+                        </p>
+                    </form>
+                </div><!-- .entry-content -->
+            </article>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
