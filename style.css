@@ -328,7 +328,7 @@ pre {
     left: 0;
     right: 0;
     z-index: 500;
-    padding: 25px 0 10px 0;
+    padding: 10px 0 2px 0;
     background: #fff;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
 
@@ -523,8 +523,8 @@ body.fixed-header #header {
 #home-page-banner {
     background: url('/images/header-image.jpg') no-repeat;
     background-size: cover;
-    height:345px;
-    padding: 20px;
+    height:450px;
+    padding-top:100px;
 }
 
 #home-page-banner img {
