@@ -13,19 +13,165 @@
                             <label for="title">Title</label>
                             <input type="text" name="title" id="title" value="" placeholder="">
                         </p>
+                        <p class="atcf-submit-campaign-capacity">
+                            <label for="title">Guest Capacity</label>
+                            <input type="text" name="title" id="title" value="" placeholder="">
+                        </p>
                         <p class="atcf-submit-campaign-goal">
                             <label for="goal">Goal ($)</label>
                             <input type="text" name="goal" id="goal" value="" placeholder="800.00">
                         </p>
-                        <p class="atcf-submit-campaign-length">
-                            <label for="length">Length<a href="#" class="atcf-toggle-neverending">No End Date</a></label>
-                            <input type="number" min="14" max="42" step="1" name="length" id="length" value="28" placeholder="">
+                        <p class="atcf-submit-campaign-goal">
+                            <label for="goal">Minimum Amount ($)</label>
+                            <input type="text" name="goal" id="goal" value="" placeholder="5.00">
                         </p>
-                        <input type="hidden" name="type" value="donation">	<div class="atcf-submit-campaign-category">
+                        <p class="atcf-submit-campaign-goal">
+                            <label for="goal">Amount of Kegs</label>
+                            <input type="text" name="goal" id="goal" value="" placeholder="1">
+                        </p>
+                        <div style="clear:both"></div>
+                        <p>
+                            <label for="physical">
+                                <input type="radio" id="physical" name="physical" value="0"> Private
+                            </label>
+                            <label for="physical">
+                                <input type="radio" id="physical" name="physical" value="1"> Public
+                            </label>
+                        </p>
+                        <div class="atcf-submit-campaign-length" style="float:left">
+                            <label for="start" style="margin-bottom:5px;">Start</label>
+
+                            <div style="clear:both"></div>
+                            <select name="" id="month" style="width:100px;float:left">
+                                <option value="1">January - 1</option>
+                                <option value="2">February - 2</option>
+                                <option value="3">March - 3</option>
+                                <option value="4">April - 4</option>
+                                <option value="5">May - 5</option>
+                                <option value="6">June - 6</option>
+                                <option value="7">July - 7</option>
+                                <option value="8">August - 8</option>
+                                <option value="9">September - 9</option>
+                                <option value="10">October - 10</option>
+                                <option value="11" selected>November - 11</option>
+                                <option value="12">December - 12</option>
+                            </select>
+                            <select name="" id="" style="width:50px;float:left">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="" selected>9</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                                <option value="">13</option>
+                                <option value="">14</option>
+                                <option value="">15</option>
+                                <option value="">16</option>
+                                <option value="">17</option>
+                                <option value="">18</option>
+                                <option value="">19</option>
+                                <option value="">20</option>
+                                <option value="">21</option>
+                                <option value="">22</option>
+                                <option value="">23</option>
+                                <option value="">24</option>
+                                <option value="">25</option>
+                                <option value="">26</option>
+                                <option value="">27</option>
+                                <option value="">28</option>
+                                <option value="">29</option>
+                                <option value="">30</option>
+                                <option value="">31</option>
+                            </select>
+                            <select name="" id="year" style="width:75px;float:left">
+                                <option value="2014" selected>2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
+                        <div class="atcf-submit-campaign-length">
+                            <label for="end">End</label>
+                            <div style="clear:both"></div>
+                            <select name="" id="month" style="width:100px;float:left">
+                                <option value="1">January - 1</option>
+                                <option value="2">February - 2</option>
+                                <option value="3">March - 3</option>
+                                <option value="4">April - 4</option>
+                                <option value="5">May - 5</option>
+                                <option value="6">June - 6</option>
+                                <option value="7">July - 7</option>
+                                <option value="8">August - 8</option>
+                                <option value="9">September - 9</option>
+                                <option value="10">October - 10</option>
+                                <option value="11" selected>November - 11</option>
+                                <option value="12">December - 12</option>
+                            </select>
+                            <select name="" id="" style="width:50px;float:left">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="" selected>10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                                <option value="">13</option>
+                                <option value="">14</option>
+                                <option value="">15</option>
+                                <option value="">16</option>
+                                <option value="">17</option>
+                                <option value="">18</option>
+                                <option value="">19</option>
+                                <option value="">20</option>
+                                <option value="">21</option>
+                                <option value="">22</option>
+                                <option value="">23</option>
+                                <option value="">24</option>
+                                <option value="">25</option>
+                                <option value="">26</option>
+                                <option value="">27</option>
+                                <option value="">28</option>
+                                <option value="">29</option>
+                                <option value="">30</option>
+                                <option value="">31</option>
+                            </select>
+                            <select name="" id="year" style="width:75px;float:left">
+                                <option value="2014" selected>2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="type" value="donation">
+                        <div style="clear:both"></div>
+                        <br/>
+                        <div class="atcf-submit-campaign-category">
                             <label for="category">Categories</label>
 
                             <ul class="atcf-multi-select">
-
                                 <li class="popular-category"><label class="selectit"><input value="7" type="checkbox"> River City Red</label></li>
 
                                 <li class="popular-category"><label class="selectit"><input value="12" type="checkbox"> Girlfriend Golden</label></li>
@@ -45,46 +191,17 @@
                             <label for="excerpt">Excerpt</label>
                             <textarea name="excerpt" id="excerpt"></textarea>
                         </p>
-                        <h3 class="atcf-submit-section backer_rewards_heading">Backer Rewards</h3>
                         <p class="atcf-submit-campaign-physical">
                             <label for="physical">
-                                <input type="checkbox" id="physical" name="physical" value="1"> Collect shipping information on checkout.		</label>
+                                <input type="checkbox" id="physical" name="physical" value="1"> Collect shipping information on checkout.
+                            </label>
                         </p>
                         <p class="atcf-submit-campaign-norewards">
                             <label for="norewards">
-                                <input type="checkbox" id="norewards" name="norewards" value="1"> No rewards, donations only.		</label>
+                                <input type="checkbox" id="norewards" name="norewards" value="1"> No rewards, donations only.
+                            </label>
                         </p>
 
-                        <div class="atcf-submit-campaign-rewards">
-                            <div class="atcf-submit-campaign-reward">
-
-                                <p class="atcf-submit-campaign-reward-amount">
-                                    <label for="rewards[0][amount]">Amount ($)</label>
-                                    <input class="name" type="text" name="rewards[0][amount]" id="rewards[0][amount]" value="">
-                                </p>
-
-                                <p class="atcf-submit-campaign-reward-name">
-                                    <label for="rewards[0][name]">Reward</label>
-                                    <input class="name" type="text" name="rewards[0][name]" id="rewards[0][name]" rows="3" value="">
-                                </p>
-
-                                <p class="atcf-submit-campaign-reward-limit">
-                                    <label for="rewards[0][limit]">Limit</label>
-                                    <input class="description" type="text" name="rewards[0][limit]" id="rewards[0][limit]" value="">
-                                    <input type="hidden" name="rewards[0][bought]" id="rewards[0][bought]" value="0">
-                                </p>
-
-
-                                <p class="atcf-submit-campaign-reward-remove">
-                                    <label>&nbsp;</label><br>
-                                    <a href="#">×</a>
-                                </p>
-                            </div>
-
-                            <p class="atcf-submit-campaign-add-reward">
-                                <a href="#" class="atcf-submit-campaign-add-reward-button">+ <em>Add Reward</em></a>
-                            </p>
-                        </div>
                         <h3 class="atcf-submit-section info_heading">Your Information</h3>
 
                         <p class="atcf-submit-campaign-organization">

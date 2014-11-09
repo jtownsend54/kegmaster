@@ -1,491 +1,499 @@
-@media (max-width: 1180px) {
-	html,
-	body {
-		min-width: 0;
-	}
+@media screen and (min-width: 1160px) {
+    #menu {
+        display: block !important;
+        margin-top:20px;
+    }
 
-	.container,
-	.site-content.full {
-		width: 90%;
-	}
-
-	.site-header .container {
-		width: 100%;
-	}
-
-	.site-branding {
-		margin-left: 5%;
-	}
-
-	.site-primary-navigation {
-		left: 0;
-		display: none;
-		width: 100%;
-		float: none;
-		position: absolute;
-		margin-top: 0;
-		top: 100%;
-		z-index: 1000;
-		background: white;
-		box-shadow: rgba(0, 0, 0, .25) 0 3px 3px;
-		padding: 20px 0;
-	}
-
-	.nav-menu-primary ul li,
-	.nav-menu-primary li {
-		float: none;
-		margin: 0 5%;
-	}
-
-	.nav-menu-primary ul li a, 
-	.nav-menu-primary li a {
-		text-align: center;
-		line-height: normal;
-		padding: 13px 0;
-		border-bottom: 1px solid rgba(0, 0, 0, .10);
-	}
-
-	.nav-menu-primary li.login a {
-		color: #505050;
-		padding: 13px 0;
-		background: none;
-		border-radius: 0;
-		display: block;
-	}
-
-	.primary-menu-toggle {
-		line-height: 1;
-		font-size: 40px;
-		display: block;
-		position: absolute;
-		top: 50%;
-		right: 5%;
-		margin-top: -20px;
-	}
-
-	.nav-menu-primary .sub-menu, 
-	.nav-menu-primary .children {
-		display: block;
-		background-color: #fff;
-		float: none;
-		padding: 0;
-		position: relative;
-		top: auto;
-		left: auto;
-		z-index: 99999;
-	}
-
-	ul.nav-menu-primary ul a, 
-	.nav-menu-primary ul ul a {
-		font-size: 14px;
-		width: 100%;
-	}
-
-	.blog-widget-area {
-		margin: 40px 0 0;
-		overflow: hidden;
-	}
-	
-	.site-content,
-	.blog-widget-area {
-		width: 100%;
-		float: none;
-		clear: both;
-	}
-
-	.footer-social .btt {
-		display: none;
-	}
-
-	.hentry.in-grid,
-	.hentry.inline {
-		width: 100%;
-		margin: 0 0 40px;
-	}
-
-	.entry-thumbnail img {
-		min-width: 100%;
-	}
-
-	/** CTA */
-	.campaign-cta p,
-	.campaign-cta .donation-cta-button {
-		line-height: normal;
-		float: none;
-		text-align: center;
-	}
-
-	.campaign-cta p {
-		margin: 0 0 20px;
-	}
-
-	/** Pledge Boxes */
-	.campaignify-pledge-boxes .campaignify-pledge-box {
-		margin-right: 4% !important;
-		margin-bottom: 4%;
-		width: 46%;
-	}
-
-	.campaignify-pledge-boxes .campaignify-pledge-box:nth-child(2n) {
-		margin-right: 0 !important;
-	}
-
-	/** Widgets */
-	.widget_campaignify_campaign_widgets .widgets-1 > .campaign-widget-widget,
-	.widget_campaignify_campaign_widgets .widgets-2 > .campaign-widget-widget,
-	.widget_campaignify_campaign_widgets .widgets-3 > .campaign-widget-widget,
-	.widget_campaignify_campaign_widgets .widgets-4 > .campaign-widget-widget,
-	.widget_campaignify_campaign_widgets .widgets-5 > .campaign-widget-widget {
-		width: 100%;
-		float: none;
-		margin: 0 auto 40px;
-	}
-
-	.campaign-backers-slider-wrap .flex-direction-nav {
-		display: none;
-	}
-
-	.campaign-widget.widget_text .textwidget {
-		margin: 0 auto;
-		max-width: 90%;
-	}
+    #header .container {
+        position: relative;
+    }
 }
 
-@media (max-width: 900px) {
-	.campaign-hero-slider-info {
-		top: 12%;
-	}
+@media screen and (max-width: 1160px) {
+    /**
+     * Structure
+     */
+    .container {
+        width: 90%;
+    }
 
-	.campaign-hero-donate-options {
-		top: 52%;
-	}
+    input[type="submit"],
+    button {
+        -webkit-appearance: none;
+    }
 
-	.donation-donate {
-		margin: 20px 0 15px;
-	}
+    /**
+     * Menu
+     */
+    body.fixed-header #header {
+        padding: 0px 0;
+        position: absolute;
+        top: 0;
+    }
 
-	.donation-donate .button {
-		font-size: 15px;
-		padding: 13px 30px 15px;
-	}
+    .menu-toggle {
+        font-size: 34px;
+        display: block;
+        float: right;
+        position: relative;
+        z-index: 10;
+        margin-top: 40px;
 
-	.widget_campaignify_campaign_backers .flex-direction-nav {
-		display: none;
-	}
+    }
+
+    .menu-toggle i {
+        color: #565656;
+    }
+
+    body.admin-bar #header {
+        top: 0;
+    }
+
+    body.admin-bar {
+        padding-top: 0;
+    }
+
+    .site-title {
+        text-align: left;
+        position: relative;
+    }
+
+    #menu {
+        display: none;
+        padding: 40px;
+        position: absolute;
+        top: 117px;
+        background: #f3dab1;
+        width: 100%;
+        left: 0;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+        height: auto;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing:    border-box;
+        box-sizing:         border-box;
+
+        -webkit-transform: translate(0, 0);
+        -ms-transform:     translate(0, 0);
+        transform:         translate(0, 0);
+    }
+
+    #header .resp-logo {
+        display:inline;
+    }
+
+    #menu .logo {
+        display:none;
+    }
+
+    #menu ul {
+        float: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: auto;
+    }
+
+    #menu .left,
+    #menu .right {
+        float:none;
+        text-align:center;
+    }
+
+    #menu #menu-right-nav li {
+        padding:0;
+    }
+
+    #menu .sub-menu {
+        margin-left: 20px;
+        display: block !important;
+        position: relative;
+        top: auto;
+        width: auto;
+        background: none;
+        border: 0;
+        padding: 0;
+    }
+
+    #menu .right .sub-menu,
+    #menu .sub-menu .sub-menu,
+    #menu .right .sub-menu .sub-menu {
+        left: 0;
+        right: auto;
+    }
+
+    #menu ul .sub-menu li {
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu li {
+        float: none;
+        height: auto;
+        padding: 0;
+    }
+
+    #menu .right {
+        float: none;
+    }
+
+    #menu .right li {
+        padding: 0;
+    }
+
+    #menu li a {
+        padding: 6px;
+        display: block;
+        font-size:24px;
+    }
+
+    #menu ul ul li a {
+        padding: 8px 0;
+    }
+
+    /**
+    * Hero Grid
+    */
+    #home-page-featured {
+        height: auto;
+    }
+
+    #home-page-featured ul {
+        height: 120px;
+        overflow: hidden;
+    }
+
+    #home-page-featured img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #home-page-featured h1,
+    #title-image h1 {
+        font-size: 20px;
+        line-height: 50px;
+        top: 26%;
+    }
+
+    /**
+     * Projects
+     */
+    #projects section {
+        margin-right: 0;
+    }
+
+    #projects .item {
+        margin-right: 3%;
+        width: 30%;
+    }
+
+    #projects .item:nth-child(4n) {
+        margin-right: 3%;
+    }
+
+    #projects .item:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    /**
+     * Campaign
+     */
+    .project-details .image,
+    #main-content {
+        width: 100%;
+    }
+
+    .project-details .right-side,
+    #sidebar {
+        width: 26%;
+    }
+
+    .project-details .image img {
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+
+    /**
+     * Footer
+     */
+    #footer .footer-widget,
+    #footer .last-widget {
+        margin-right: 5%;
+        width: 20%;
+        float: left;
+    }
+
+    #footer .last-widget {
+        margin-right: 0;
+    }
 }
 
-@media (max-width: 665px) {
-	.page-header {
-		margin: 0 0 35px;
-		padding: 35px 0;
-	}
+@media screen and (max-width: 880px) {
+    /**
+    * Hero Grid
+    */
+    #home-page-featured {
+        height: auto;
+    }
 
-	.page-title {
-		margin: 0 5%;
-	}
+    #home-page-featured ul {
+        height: 100px;
+        overflow: hidden;
+    }
 
-	.entry-header .entry-title {
-		font-size: 25px;
-	}
+    #home-page-featured img {
+        width: 100px;
+        height: 100px;
+    }
 
-	.arrowed .arrow {
-		display: none;
-	}
+    #home-page-featured h1,
+    #title-image h1 {
+        font-size: 20px;
+        line-height: 50px;
+        top: 20%;
+    }
 
-	.footer-widget,
-	.footer-widget:first-child,
-	.footer-navigation,
-	.site-info {
-		width: 100%;
-		float: none;
-		margin: 0 0 40px;
-	}
+    .home-page-featured-single,
+    #title-image {
+        min-height: 0;
+        height: 300px;
+    }
 
-	.footer-widget:last-child {
-		margin-bottom: 0;
-	}
+    /**
+     * Projects
+     */
+    #projects .item {
+        margin-right: 5%;
+        width: 45%;
+    }
 
-	.footer-navigation,
-	.site-info {
-		margin: 0 0 20px;
-	}
+    #projects .item:nth-child(4n),
+    #projects .item:nth-child(3n) {
+        margin-right: 5%;
+    }
 
-	.footer-navigation li {
-		margin: 0 20px 0 0;
-	}
+    #projects .item:nth-child(2n) {
+        margin-right: 0;
+    }
 
-	.campaign-widget.arrowed {
-		padding: 10% 0;
-	}
+    /**
+     * Sorting
+     */
+    .home .sort-tabs {
+        display: none;
+    }
 
-	.campaign-widget-title, 
-	.single-comments-title {
-		font-size: 35px;
-		margin-bottom: 20px;
-	}
+    #content .search-box {
+        float: none;
+        margin-bottom: 36px;
+        width: 100%;
+    }
 
-	.campaign-gallery-description, 
-	.campaign-backers-description, 
-	.campaign-video-description {
-		margin: 0;
-		font-size: 16px;
-	}
+    /**
+     * Campaign
+     */
+    .project-details .image,
+    #main-content {
+        width: 100%;
+        float: none;
+    }
 
-	/** Comments */
-	.widget_campaignify_campaign_comments .container {
-		width: 80%;
-	}
+    #main-content {
+        margin: 40px 0 0;
+    }
 
-	/** Campaign Content */
-	.widget_campaignify_campaign_content img {
-		max-width: 100%;
-	}
-	
-	.widget_campaignify_campaign_content img.alignleft,
-	.widget_campaignify_campaign_content img.alignright,
-	.campaign-feature-image,
-	.campaign-feature-content {
-		float: none;
-		margin: 0 0 20px;
-	}
+    .project-details .right-side,
+    #sidebar {
+        width: 100%;
+        height: auto;
+        float: none;
+        clear: both;
 
-	/** Hero */
-	.campaign-hero-slider-info,
-	.campaign-hero-donate-options {
-		width: 80%;
-		left: 10%;
-		margin-left: 0;
-	}
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing:    border-box;
+        box-sizing:         border-box;
+    }
 
-	.campaign-hero-donate-options {
-		top: 53%;
-	}
+    .project-details .fund {
+        clear: both;
+        margin: 30px 30px 0;
+        position: relative;
+        bottom: auto;
+    }
 
-	.donation-progress-bar > span {
-		width: 50%;
-	}
+    /**
+     * Modals
+     */
+    .campaign-widget-preview-widget,
+    .campaign-widget-preview-use {
+        width: 100%;
+        float: none;
+    }
 
-	.donation-progress-bar .donation-progress-funded {
-		text-align: left;
-	}
-
-	.donation-progress-bar .donation-progress-percent,
-	.donation-share {
-		display: none;
-	}
-
-	.campaign-hero-slider-desc {
-		font-size: 16px;
-	}
-
-	.donation-donate {
-		margin-top: 30px;
-	}
-
-	.widget_campaignify_hero_contribute + .campaign-widget.arrowed {
-		padding-top: 10%;
-	}
-
-	.campaign-hero .flex-direction-nav {
-		display: none;
-	}
-
-	/** Feature */
-	.campaign-feature-image,
-	.campaign-feature-content {
-		width: 100%;
-	}
-
-	/** Modals */
-	.edd_download_purchase_form {
-		padding: 10%;
-	}
-
-	.modal-login, 
-	.modal-register {
-		margin: 5% 10%;
-	}
-
-	.fancybox-nav {
-		display: none;
-	}
+    .modal-login,
+    .modal-register {
+        margin: 10%;
+    }
 }
 
-@media (max-width: 400px) {
-	.container,
-	.site-content.full,
-	.widget_campaignify_campaign_comments .container {
-		width: 80%;
-	}
+@media screen and (max-width: 600px) {
+    /**
+    * Hero Grid
+    */
+    #home-page-featured {
+        height: auto;
+    }
 
-	.site-branding {
-		margin-left: 10%;
-	}
+    #home-page-featured ul {
+        height: 75px;
+        overflow: hidden;
+    }
 
-	.primary-menu-toggle {
-		right: 10%;
-	}
+    #home-page-featured img {
+        width: 75px;
+        height: 75px;
+    }
 
-	.site-primary-navigation li {
-		margin: 0 10%;
-	}
+    #home-page-featured h1,
+    #title-image h1 {
+        font-size: 16px;
+        line-height: 40px;
+        top: 20%;
+    }
 
-	.page-title {
-		margin: 0 10%;
-		font-size: 24px;
-		line-height: normal;
-	}
+    .home-page-featured-single,
+    #title-image {
+        height: 225px;
+    }
 
-	.entry-header,
-	.entry-meta {
-		width: 100%;
-		float: none;
-	}
+    /**
+     * Projects
+     */
+    #projects .item {
+        width: 100%;
+    }
 
-	.entry-meta {
-		margin: 0 35px;
-	}
+    /**
+     * Campaign
+     */
+    .sort-tabs {
+        height: auto;
+    }
 
-	.entry-header .entry-title,
-	.in-grid .entry-header .entry-title, 
-	.inline .entry-header .entry-title {
-		font-size: 20px;
-	}
+    .sort-tabs ul {
+        float: none;
+    }
 
-	.author-avatar {
-		display: none;
-	}
+    .sort-tabs li {
+        float: none;
+        margin: 0 0 20px;
+        width: 100%;
+    }
 
-	.author-info {
-		margin: 0;
-	}
+    .sort-tabs li a {
+        text-align: center;
+        float: none;
+        width: 100%;
 
-	.campaign-widget.arrowed {
-		padding: 10% 0;
-	}
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing:    border-box;
+        box-sizing:         border-box;
+    }
 
-	/** CTA */
-	.campaign-cta p {
-		font-size: 20px;
-		line-height: normal;
-	}
+    /**
+     * Main
+     */
+    #main-content {
+        margin-top: 0;
+    }
 
-	.campaign-cta .donation-cta-button a {
-		font-size: 15px;
-		padding: 13px 30px 15px;
-	}
+    #projects {
+        display:block;
+    }
 
-	.campaign-widget-title, 
-	.single-comments-title {
-		font-size: 25px;
-		margin-bottom: 20px;
-	}
+    #projects .brewery {
+        margin-bottom:80px;
+    }
 
-	/** Comments */
-	.comment-avatar {
-		width: 40px;
-	}
+    .brewery .social-icons {
+        display:block;
+    }
 
-	.comment-avatar img {
-		width: 40px;
-		height: 40px;
-	}
+    /**
+     * Footer
+     */
+    #footer .footer-widget,
+    #footer .last-widget {
+        width: 100%;
+        margin: 0 0 40px;
+        float: none;
+    }
 
-	.comment-meta, 
-	.comment-content, 
-	.comment-awaiting-moderation {
-		margin-left: 60px;
-	}
+    /**
+     * Contact
+     */
+    .contacts h2 {
+        width: auto;
+    }
 
-	.comment-list .edit-link {
-		float: none;
-		display: block;
-	}
+    /**
+     * Modals
+     */
+    .atcf_custom_price_wrap,
+    .mfp-content .edd_purchase_submit_wrapper,
+    .mfp-content .atcf_custom_price_wrap + .edd_purchase_submit_wrapper {
+        float: none;
+        width: 100%;
+    }
 
-	.comment-list .children {
-		margin-left: 0;
-	}
+    .mfp-content .atcf_custom_price_wrap input[type="text"] {
+        width: 90%;
+    }
 
-	/** Pledge Boxes */
-	.campaignify-pledge-boxes .campaignify-pledge-box {
-		width: 100%;
-		float: none;
-		margin: 0 0 40px;
-	}
+    .mfp-content .edd_purchase_submit_wrapper,
+    .mfp-content .atcf_custom_price_wrap + .edd_purchase_submit_wrapper {
+        margin: 20px 0 0;
+    }
 
-	/** Hero */
-	.campaign-hero-slider-desc {
-		display: none;
-	}
+    .mfp-content .edd_purchase_submit_wrapper a,
+    .mfp-content .atcf_custom_price_wrap + .edd_purchase_submit_wrapper a {
+        display: block;
+    }
 
-	.campaign-hero-slider-info {
-		top: 20px;
-	}
+    .mfp-content .edd_download_purchase_form .edd_price_options h3 {
+        float: none;
+    }
 
-	.donation-donate {
-		margin-top: 10px;
-	}
+    .mfp-content .edd_download_purchase_form .edd_price_options .backer-count {
+        float: none;
+        margin: 5px 0 0;
+    }
+}
 
-	.campaign-hero-donate-options {
-		top: 35%;
-	}
+@media screen and (max-width: 425px) {
+    /**
+    * Hero Grid
+    */
+    #home-page-featured h1,
+    #title-image h1 {
+        top: 30%;
+        font: 700 14px/24px 'Lato', sans-serif;
+    }
 
-	.campaign-gallery-description, 
-	.campaign-backers-description, 
-	.campaign-video-description {
-		margin: 0 0 30px;
-	}
+    #home-page-featured h1 span,
+    #title-image h1 span {
+        display: inline;
+        margin: 0;
+        padding: 5px 0;
+    }
 
-	.donation-progress-bar .donation-progress-funded em {
-		display: none;
-	}
+    .title {
+        padding: 57px 0;
+        height: auto;
+    }
 
-	/** Contirbute */
-	.edd_price_options h3 {
-		float: none;
-	}
-
-	.edd_price_options .backers {
-		display: inline-block;
-		margin-top: 13px;
-		float: none;
-		clear: left;
-	}
-
-	.campaign-widget.widget_text .textwidget {
-		margin: 0 auto;
-		max-width: 80%;
-	}
-
-	.campaignify_custom_price_wrap,
-	.edd_purchase_submit_wrapper {
-		float: none;
-		width: 100%;
-	}
-
-	.campaignify_custom_price_wrap .currency {
-		width: 5%;
-		display: block;
-		line-height: 47px;
-	}
-
-	.campaignify_custom_price_wrap .currency.left,
-	.campaignify_custom_price_wrap input[type="text"].right {
-		float: left;
-	}
-
-	.campaignify_custom_price_wrap .currency.right,
-	.campaignify_custom_price_wrap input[type="text"].left {
-		float: right;
-	}
-
-	.campaignify_custom_price_wrap input[type="text"] {
-		margin: 0;
-		width: 90%;
-	}
-
-	.edd_purchase_submit_wrapper input[type="submit"] {
-		margin: 10px 0 0;
-		width: 100%;
-	}
+    .title h1 {
+        padding: 0;
+    }
 }

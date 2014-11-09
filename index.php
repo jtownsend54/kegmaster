@@ -61,6 +61,9 @@ $app->post('/payment', function () use ($app) {
     return $app['twig']->render('payment.html.twig');
 });
 
+$app->get('/about', function () use ($app) {
+    return $app['twig']->render('about.html.twig');
+});
 
 
 $app->run();
